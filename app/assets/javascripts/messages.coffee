@@ -6,4 +6,11 @@ $(document).ready ->
     element = document.getElementsByClassName('messages')[0];
     element.scrollTop = element.scrollHeight;
   ), 1000
+
+  $('#enter').click ->
+      $('#overlay').addClass('entered')
+      user = $('#user').val();
+      alert(user)
+    return
+
   return

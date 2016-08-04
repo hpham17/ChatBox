@@ -1,5 +1,8 @@
-<div class="overlay">
-  <input type="text" id="user"></input>
+
+<div class="center" id="overlay">
+  <h2 class="center" id="title">Please enter a username</h2>
+  <input id="user" style="text"></input>
+  <%= image_tag('enter.png', id: 'enter') %>
 </div>
 
-<div class="chat-box"><%= react_component 'Convo', { data: @messages, user: 'Richard' } %></div>
+<div class="chat-box"><%= react_component 'Convo', { data: @messages } %></div>

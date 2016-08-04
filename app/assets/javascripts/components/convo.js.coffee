@@ -1,14 +1,17 @@
 @Convo = React.createClass
   getInitialState: ->
     messages: @props.data
-    user: @props.user
+    user: ''
   getDefaultProps: ->
     messages: []
     user: ''
   addMessage: (message) ->
     messages = React.addons.update(@state.messages, { $push: [message] })
     @setState messages: messages
+  addUser() ->
+    @setState user: $('#user').val()
   render: ->
+    this.addUser()
     React.DOM.div
       className: ''
       React.DOM.h2

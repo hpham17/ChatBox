@@ -6,7 +6,7 @@ body {
   background-color: #141518;
 }
 
-input.custom {
+input, input.custom {
   display: block;
   text-align: center;
   margin: 0 auto;
@@ -20,6 +20,7 @@ input.custom {
   overflow: hidden;
 }
 
+
 .title {
   text-align: center;
   color: #808080;
@@ -28,17 +29,21 @@ input.custom {
   border: 3px solid #000;
   border-radius: 5%;
   opacity: .9;
-  background-color: #fff;
+  background: url(clouds.jpg) no-repeat left top;
+  background-size: cover;
   height: 500px;
   width: 400px;
   overflow: scroll;
   top: 50%;
   left: 50%;
+  opacity: 0.9%;
+  padding-top: 20px;
 }
 .message-text {
-  padding-left: 40px;
+  padding: 0 40px;
   color: blue;
   font-weight: bold;
+  z-index: 2;
 }
 .chat-box {
   height: 100%;
@@ -46,11 +51,50 @@ input.custom {
   margin: 0 auto;
 }
 
-.overlay{
+#overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 1000;
+  background: #222222;
+}
+
+.center {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#title {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+}
+
+#user {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 0;
+  border-radius: 10px;
+  height: 50px;
+  width: 300px;
+  background: #504f4f;
+}
+
+#enter {
+  position: absolute;
+  top: 49%;
+  left: 75%;
+  height: 65px;
+  width: 65px;
+}
+
+.entered {
+  opacity: 0;
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+  visibility: hidden;
 }
