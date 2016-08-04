@@ -1,0 +1,56 @@
+// Place all the styles related to the Messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #141518;
+}
+
+input.custom {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 2em;
+  color: #eeeeee;
+  border: 0;
+  background: #2c3e50;
+  height: 1em;
+  line-height: 1em;
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  color: #808080;
+}
+.messages {
+  border: 3px solid #000;
+  border-radius: 5%;
+  opacity: .9;
+  background-color: #fff;
+  height: 500px;
+  width: 400px;
+  overflow: scroll;
+  top: 50%;
+  left: 50%;
+}
+.message-text {
+  padding-left: 40px;
+  color: blue;
+  font-weight: bold;
+}
+.chat-box {
+  height: 100%;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
