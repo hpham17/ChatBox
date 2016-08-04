@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'messages/index'
+  root 'messages#index'
 
-  get 'home/index'
+
 
   devise_for :users, controllers: {
         sessions: 'users/sessions'
