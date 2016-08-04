@@ -51,7 +51,7 @@ input, input.custom {
   margin: 0 auto;
 }
 
-#overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -84,7 +84,7 @@ input, input.custom {
   background: #504f4f;
 }
 
-#enter {
+.enter {
   position: absolute;
   top: 49%;
   left: 75%;

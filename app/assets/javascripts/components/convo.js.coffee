@@ -8,12 +8,10 @@
   addMessage: (message) ->
     messages = React.addons.update(@state.messages, { $push: [message] })
     @setState messages: messages
-  addUser() ->
-    @setState user: $('#user').val()
   render: ->
-    this.addUser()
     React.DOM.div
       className: ''
+      React.createElement UserInput, handleNewUser: @addUser
       React.DOM.h2
         className: 'title'
         'ChatBox'

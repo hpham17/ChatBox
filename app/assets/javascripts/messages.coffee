@@ -7,10 +7,8 @@ $(document).ready ->
     element.scrollTop = element.scrollHeight;
   ), 1000
 
-  $('#enter').click ->
-      $('#overlay').addClass('entered')
-      user = $('#user').val();
-      alert(user)
+  $(document.body).on 'click', '.enter', () ->
+      $('.overlay').addClass('entered')
     return
 
   return
